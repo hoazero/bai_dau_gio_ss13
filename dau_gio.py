@@ -35,11 +35,11 @@ QUẢN LÝ NHÂN SỰ - STAFF MANAGER
 
                     manager_salary = input('Nhập lương: ')
 
-                    if manager_name != '':
+                    if manager_name == '':
                         is_true = False
                         print('Lỗi tên không được để trống!!')
                     
-                    if float(manager_salary) > 0:
+                    if float(manager_salary) < 0:
                         is_true = False
                         print('Lỗi lương phải lớn hơn 0')
 
